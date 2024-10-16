@@ -6,7 +6,7 @@ return {
         "williamboman/mason.nvim",
         cmd = "Mason",
         keys = {
-          { "<leader>M", "<cmd>Mason<cr>", desc = "Mason" },
+          { "<Leader>M", "<Cmd>Mason<CR>", desc = "Mason" },
         },
       },
       "williamboman/mason-lspconfig.nvim",
@@ -30,8 +30,8 @@ return {
           vim.keymap.set("n", "gI", vim.lsp.buf.implementation, opts)
 
           -- TODO: increname?
-          vim.keymap.set("n", "<leader>rn", vim.lsp.buf.rename, opts)
-          vim.keymap.set("n", "<leader>ca", vim.lsp.buf.code_action, opts)
+          vim.keymap.set("n", "<Leader>rn", vim.lsp.buf.rename, opts)
+          vim.keymap.set("n", "<Leader>ca", vim.lsp.buf.code_action, opts)
         end,
       })
 

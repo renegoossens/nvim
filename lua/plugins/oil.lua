@@ -2,7 +2,7 @@ return {
   "stevearc/oil.nvim",
   lazy = false,
   keys = {
-    { "-", "<cmd>Oil<cr>", desc = "Oil" },
+    { "-", "<Cmd>Oil<CR>", desc = "Oil" },
   },
   opts = {
     skip_confirm_for_simple_edits = true,

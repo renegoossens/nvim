@@ -11,8 +11,8 @@ return {
   },
   cmd = "Telescope",
   keys = {
-    { "<leader>T", "<cmd>Telescope<cr>", desc = "Telescope builtins" },
-    { "<leader><leader>", "<cmd>Telescope find_files<cr>", desc = "Telescope find files" },
+    { "<Leader>T", "<Cmd>Telescope<CR>", desc = "Telescope builtins" },
+    { "<Leader><Leader>", "<Cmd>Telescope find_files<CR>", desc = "Telescope find files" },
   },
   opts = {},
 }

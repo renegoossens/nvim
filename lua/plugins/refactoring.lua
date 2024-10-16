@@ -7,24 +7,24 @@ return {
   cmd = "Refactor",
   keys = {
     {
-      "<leader>R",
+      "<Leader>R",
       function() require("refactoring").select_refactor({}) end,
       desc = "Refactor",
       mode = { "n", "x" },
     },
     {
-      "<leader>rp",
+      "<Leader>rp",
       function() require("refactoring").debug.printf({}) end,
       desc = "Debug printf",
     },
     {
-      "<leader>rv",
+      "<Leader>rv",
       function() require("refactoring").debug.print_var({}) end,
       mode = { "x", "n" },
       desc = "Debug print var",
     },
     {
-      "<leader>rc",
+      "<Leader>rc",
       function() require("refactoring").debug.cleanup({}) end,
       desc = "Debug clean print statements",
     },

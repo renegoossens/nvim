@@ -26,8 +26,8 @@ return {
   {
     "Wansmer/treesj",
     keys = {
-      { "<leader>j", desc = "Join treesitter node" },
-      { "<leader>s", desc = "Split treesitter node" },
+      { "<Leader>j", desc = "Join treesitter node" },
+      { "<Leader>s", desc = "Split treesitter node" },
     },
     dependencies = { "nvim-treesitter/nvim-treesitter" },
     opts = {},

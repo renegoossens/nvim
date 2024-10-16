@@ -3,7 +3,7 @@ return {
   event = "VeryLazy",
   cmd = "URLOpenUnderCursor",
   keys = {
-    { "gx", "<cmd>URLOpenUnderCursor<cr>", desc = "Open URL" },
+    { "gx", "<Cmd>URLOpenUnderCursor<CR>", desc = "Open URL" },
   },
   opts = {
     highlight_url = {
