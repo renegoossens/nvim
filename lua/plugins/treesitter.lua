@@ -15,11 +15,18 @@ return {
   },
   {
     "nvim-treesitter/nvim-treesitter-context",
+    event = { "BufReadPre", "BufNewFile" },
+    cmd = { "TSContextToggle" },
+    keys = {
+      { "<Leader>x", "<Cmd>TSContextToggle<CR>" },
+    },
     config = function()
       require("treesitter-context").setup({
-        mode = "topline",
+        enable = false,
+        mode = "cursor",
+        max_lines = 3,
       })
-      -- TODO: better visualisation of treesitter-context
+      vim.api.nvim_set_hl(0, "TreesitterContext", { link = "CursorLine" })
       vim.api.nvim_set_hl(0, "TreesitterContextLineNumber", { link = "CursorLineNr" })
     end,
   },

@@ -7,7 +7,7 @@ vim.opt.number = true
 vim.opt.relativenumber = true
 vim.opt.cursorline = true
 
-vim.opt.scrolloff = 10
+vim.opt.scrolloff = 5
 vim.opt.sidescrolloff = 2
 
 vim.opt.wrap = false
