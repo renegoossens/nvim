@@ -15,6 +15,7 @@ return {
   keys = {
     { "<Leader>T", "<Cmd>Telescope<CR>", desc = "Telescope builtins" },
     { "<Leader><Leader>", "<Cmd>Telescope find_files<CR>" },
+    { "<Leader>g", "<Cmd>Telescope live_grep<CR>" },
   },
   opts = {},
 }

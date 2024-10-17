@@ -20,10 +20,16 @@ map("", "ç", "{", { remap = true })
 map("", "à", "}", { remap = true })
 
 -- unimpaired quickfix
-map("n", "]c", "<Cmd>cnext<CR>")
-map("n", "[c", "<Cmd>cprev<CR>")
-map("n", "]C", "<Cmd>clast<CR>")
-map("n", "[C", "<Cmd>cfirst<CR>")
+map("n", ";c", "<Cmd>cnext<CR>")
+map("n", ",c", "<Cmd>cprev<CR>")
+map("n", ";C", "<Cmd>clast<CR>")
+map("n", ",C", "<Cmd>cfirst<CR>")
+
+-- unimpaired buffers
+map("n", ";b", "<Cmd>bnext<CR>")
+map("n", ",b", "<Cmd>bprev<CR>")
+map("n", ";B", "<Cmd>blast<CR>")
+map("n", ",B", "<Cmd>bfirst<CR>")
 
 -- better vertical movement over wrapped lines
 map("n", "j", "v:count == 0 ? 'gj' : 'j'", { expr = true, silent = true })

@@ -6,15 +6,15 @@ return {
   },
   event = "VeryLazy",
   keys = {
-    -- TODO: TodoTelescope horizontal preview
-    { "<Leader>t", "<Cmd>TodoTelescope<CR>", desc = "Telescope todo" },
+    { "<Leader>tt", "<Cmd>TodoTelescope<CR>" },
+    { "<Leader>tq", "<Cmd>TodoQuickFix<CR>" },
     {
-      "]t",
+      ";t",
       function() require("todo-comments").jump_next() end,
       desc = "Next Todo",
     },
     {
-      "[t",
+      ",t",
       function() require("todo-comments").jump_prev() end,
       desc = "Previous Todo",
     },
@@ -22,7 +22,6 @@ return {
   config = function()
     require("todo-comments").setup({
       highlight = {
-        multiline = true,
         multiline_pattern = "^ .",
       },
     })
