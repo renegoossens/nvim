@@ -31,7 +31,9 @@ return {
         {
           name = "nvim_lsp",
           -- hide snippets from lsp
-          entry_filter = function(entry, _) return entry:get_kind() ~= 15 end,
+          entry_filter = function(entry, _)
+            return entry:get_kind() ~= 15
+          end,
         },
         { name = "luasnip" },
         { name = "buffer" },
@@ -39,7 +41,9 @@ return {
       }),
 
       snippet = {
-        expand = function(args) luasnip.lsp_expand(args.body) end,
+        expand = function(args)
+          luasnip.lsp_expand(args.body)
+        end,
       },
 
       completion = {
@@ -51,13 +55,13 @@ return {
         documentation = cmp.config.window.bordered({ scrollbar = false }),
       },
 
-      -- formatting = {
-      --   format = lspkind.cmp_format({
-      --     -- mode = "symbol",
-      --     maxwidth = 50,
-      --     ellipsis_char = "...",
-      --   }),
-      -- },
+      formatting = {
+        format = lspkind.cmp_format({
+          -- mode = "symbol",
+          maxwidth = 50,
+          ellipsis_char = "...",
+        }),
+      },
 
       mapping = cmp.mapping.preset.insert({
         ["<CR>"] = cmp.mapping(function(fallback)

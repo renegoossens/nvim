@@ -6,7 +6,9 @@ local group = augroup("user_cmds", { clear = true })
 autocmd("TextYankPost", {
   desc = "Highlight on yank",
   group = group,
-  callback = function() vim.highlight.on_yank({ higroup = "Visual", timeout = 300 }) end,
+  callback = function()
+    vim.highlight.on_yank({ higroup = "Visual", timeout = 300 })
+  end,
 })
 
 autocmd("FileType", {

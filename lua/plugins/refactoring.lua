@@ -8,24 +8,32 @@ return {
   keys = {
     {
       "<Leader>R",
-      function() require("refactoring").select_refactor({}) end,
+      function()
+        require("refactoring").select_refactor({})
+      end,
       desc = "Refactor",
       mode = { "n", "x" },
     },
     {
       "<Leader>rp",
-      function() require("refactoring").debug.printf({}) end,
+      function()
+        require("refactoring").debug.printf({})
+      end,
       desc = "Debug printf",
     },
     {
       "<Leader>rv",
-      function() require("refactoring").debug.print_var({}) end,
+      function()
+        require("refactoring").debug.print_var({})
+      end,
       mode = { "x", "n" },
       desc = "Debug print var",
     },
     {
       "<Leader>rc",
-      function() require("refactoring").debug.cleanup({}) end,
+      function()
+        require("refactoring").debug.cleanup({})
+      end,
       desc = "Debug clean print statements",
     },
   },
