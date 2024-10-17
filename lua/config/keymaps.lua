@@ -36,6 +36,4 @@ map("n", "j", "v:count == 0 ? 'gj' : 'j'", { expr = true, silent = true })
 map("n", "k", "v:count == 0 ? 'gk' : 'k'", { expr = true, silent = true })
 
 -- buffers
-map("n", "<Tab>", "<Cmd>bnext<CR>", { desc = "Next buffer" })
-map("n", "<S-Tab>", "<Cmd>bprev<CR>", { desc = "Previous buffer" })
 map("n", "<Leader>bd", "<Cmd>bdelete<CR>", { desc = "Delete buffer" })
